@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './assets/style.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//class based component
+// class App extends React.Component{
+//     render(){
+//         return <div>hello react</div>;
+//     }
+// }
+
+
+//functional component
+//inline styling-> style={{ color: 'green', border: '1px solid blue', backgroundColor:'gray' }}
+function App({title}){
+return <div className="bg-gray-600 text-white p-5 border">
+            {title}
+        </div>;
 }
 
 export default App;
